@@ -7,7 +7,7 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe \
+    $(LOCAL_PATH)/overlay-superior
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -106,10 +106,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     org.ifaa.android.manager
-
-# Build
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-RELAX_USES_LIBRARY_CHECK := true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -280,11 +276,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.xiaomi_sdm660
-
-# LiveDisplay native
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.0-service-sysfs
 
 # Media
 PRODUCT_PACKAGES += \
